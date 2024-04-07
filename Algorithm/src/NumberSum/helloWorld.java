@@ -5,9 +5,18 @@ import java.util.Scanner;
 public class helloWorld {
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
-		int a = sc.nextInt();
-		int b = sc.nextInt();
+
+		int A= sc.nextInt();
+		int B= sc.nextInt();
 		
-		System.out.println(a+b);
+		int beak = B/100;
+		int sip = (B-beak*100)/10;
+		int il = (B-beak*100-sip*10)/1;
+		
+		System.out.println(A*beak);
+		System.out.println(sip);
+		System.out.println(il);
+		System.out.println(A*B);
+		
 	}
 }
