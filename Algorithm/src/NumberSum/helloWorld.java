@@ -13,6 +13,7 @@ public class helloWorld {
 		int sip = (B-beak*100)/10;
 		int il = (B-beak*100-sip*10)/1;
 		
+		
 		System.out.println(A*beak);
 		System.out.println(sip);
 		System.out.println(il);
