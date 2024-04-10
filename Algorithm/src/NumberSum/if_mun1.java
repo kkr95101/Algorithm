@@ -2,7 +2,7 @@ package NumberSum;
 
 import java.util.Scanner;
 
-public class helloWorld {
+public class if_mun1 {
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
 

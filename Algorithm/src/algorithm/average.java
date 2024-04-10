@@ -1,4 +1,4 @@
-package NumberSum;
+package algorithm;
 
 import java.util.Scanner;
 
