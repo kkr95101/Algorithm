@@ -7,7 +7,7 @@ import java.util.HashMap;
 import java.util.Map;
 import java.util.StringTokenizer;
 
-public class Main {
+public class alphabet {
 
 	public static void main(String[] args) throws IOException {
 
