@@ -2,7 +2,7 @@ package algorithm;
 
 import java.util.Scanner;
 
-public class average {
+public class Average {
 
 	public static void main(String[] args) {
 		
@@ -23,5 +23,6 @@ public class average {
 			sum = sum + A[i];
 		}
 		System.out.println(sum*100.0/max/N);
+		sc.close();
 	}
 }

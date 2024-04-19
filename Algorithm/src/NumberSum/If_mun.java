@@ -3,7 +3,7 @@ package NumberSum;
 import java.util.Arrays;
 import java.util.Scanner;
 
-public class if_mun {
+public class If_mun {
 
 	public static void main(String[] args) {
 
@@ -30,6 +30,6 @@ public class if_mun {
 			sanggum = d[2] * 100;
 			System.out.println(sanggum);
 		}
-
+		sc.close();
 	}
 }

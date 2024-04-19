@@ -2,7 +2,7 @@ package NumberSum;
 
 import java.util.Scanner;
 
-public class for_mun {
+public class For_mun {
 
 	public static void main(String[] args) {
 
@@ -12,6 +12,6 @@ public class for_mun {
 		for (int i = 1; i < 10; i++) {
 			System.out.println(a+" * "+i+" = "+a*i);
 		}
-
+		sc.close();
 	}
 }

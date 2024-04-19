@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
 
-public class for_mun2 {
+public class For_mun2 {
 
 	public static void main(String[] args) {
 
@@ -26,5 +26,6 @@ public class for_mun2 {
 			sum += d.get(i);
 		}
 		System.out.println(sum);
+		sc.close();
 	}
 }

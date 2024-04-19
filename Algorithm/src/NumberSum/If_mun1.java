@@ -2,7 +2,7 @@ package NumberSum;
 
 import java.util.Scanner;
 
-public class if_mun1 {
+public class If_mun1 {
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
 
@@ -18,6 +18,6 @@ public class if_mun1 {
 		System.out.println(sip);
 		System.out.println(il);
 		System.out.println(A*B);
-		
+		sc.close();
 	}
 }

@@ -2,7 +2,7 @@ package NumberSum;
 
 import java.util.Scanner;
 
-public class sum {
+public class Sum {
 
 	public static void main(String[] args) {
 
