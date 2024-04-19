@@ -1,4 +1,4 @@
-package DoubleLinkedList;
+package LinkedList.DoubleLinkedList;
 
 import java.util.NoSuchElementException;
 

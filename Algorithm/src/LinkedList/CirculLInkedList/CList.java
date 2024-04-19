@@ -1,8 +1,10 @@
-package CirculLInkedList;
+package LinkedList.CirculLInkedList;
 
 import java.util.NoSuchElementException;
 
-import SingleLinkedList.Node;
+import LinkedList.SingleLinkedList.Node;
+
+
 
 public class CList<E> {
 	
