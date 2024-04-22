@@ -14,6 +14,7 @@ public class If_mun1 {
 		int il = (B-beak*100-sip*10)/1;
 		
 		
+		
 		System.out.println(A*beak);
 		System.out.println(sip);
 		System.out.println(il);
