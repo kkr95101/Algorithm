@@ -7,7 +7,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.StringTokenizer;
 
-public class geometricSequence {
+public class Geometric_Sequence {
 
 	public static void main(String[] args) throws IOException {
 
