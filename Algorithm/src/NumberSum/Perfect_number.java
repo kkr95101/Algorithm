@@ -10,7 +10,7 @@ import java.util.StringTokenizer;
 
 import javax.naming.ldap.SortControl;
 
-public class Main {
+public class Perfect_number {
 
 	public static void main(String[] args) throws IOException {
 
