@@ -1,52 +1,52 @@
 package NumberSum;
-
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
-import java.util.ArrayList;
-import java.util.List;
+import java.util.Arrays;
 import java.util.StringTokenizer;
 
 public class Main {
-
-	public static void main(String[] args) throws IOException {
-
-		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-		StringTokenizer st = new StringTokenizer(br.readLine());
-		int Number = Integer.parseInt(st.nextToken());
-		if (isPrime(Number)) {
-			System.out.println(Number);
+    public static void main(String[] args) throws IOException {
+        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+        double totalGrade = 0.0;
+        int subject = 20;
+        double grade =0;
+        for (int i = 0; i < 20; i++) {
+        	StringTokenizer st = new StringTokenizer(br.readLine());
+        	String subjectName =  st.nextToken();
+        	double credit = Double.valueOf(st.nextToken());
+        	String grade1 = st.nextToken();
+        	double realGrade = 0.0;
+        	
+        	if(grade1.equals("A+")) {
+        		realGrade = 4.5;
+        	}else if(grade1.equals("A0")) {
+        		realGrade = 4.0;
+        	}else if(grade1.equals("B+")) {
+        		realGrade = 3.5;
+        	}else if(grade1.equals("B0")) {
+        		realGrade = 3.0;
+        	}else if(grade1.equals("C+")) {
+        		realGrade = 2.5;
+        	}else if(grade1.equals("C0")) {
+        		realGrade = 2.0;
+        	}else if(grade1.equals("D+")) {
+        		realGrade = 1.5;
+        	}else if(grade1.equals("D0")) {
+        		realGrade = 1.0;
+        	}else if(grade1.equals("F")) {
+        		realGrade = 0.0;
+        	}
+        
+        	if(grade1.equals("P")) {
+        		subject--;
+        		credit =0.0;
+        		realGrade=0.0;
+        	}else {
+        		grade += realGrade;
+        		totalGrade += credit*realGrade;
+        	}
 		}
-		if(Number%2==0) {
-			for (int i = 0; i < Number/2; i++) {
-				System.out.println("2");
-				Number = Number/2;
-			}
-		}
-		if(Number%3==0) {
-			for (int i = 0; i < Number/3; i++) {
-				System.out.println("3");
-				Number = Number/3;
-			}
-		}
-	}
-
-	public static boolean isPrime(int n) {
-		if (n <= 1) {
-			return false;
-		}
-		if (n == 2) {
-			return true;
-		}
-		if (n % 2 == 0) {
-			return false;
-		}
-		for (int i = 3; i <= Math.sqrt(n); i += 2) {
-			if (n % i == 0) {
-				return false;
-			}
-		}
-		return true;
-
-	}
+        System.out.println((totalGrade/subject)/(grade/subject));
+    }
 }
