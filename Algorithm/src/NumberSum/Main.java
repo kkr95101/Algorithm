@@ -19,6 +19,8 @@ public class Main {
 			String grade1 = st.nextToken();
 			double realGrade = 0.0;
 
+			
+			
 			if (grade1.equals("A+")) {
 				realGrade = 4.5;
 			} else if (grade1.equals("A0")) {
