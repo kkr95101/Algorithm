@@ -2,7 +2,7 @@ package algorithm.Stack;
 
 public class main {
 
-	public static void main(String[] args) {
+	public main(String[] args) {
 		ArrayStack<String> stack = new ArrayStack<String>();
 		stack.push("apple");
 		stack.push("orange");

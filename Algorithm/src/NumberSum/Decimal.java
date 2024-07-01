@@ -13,7 +13,6 @@ public class Decimal {
 
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         StringTokenizer st = new StringTokenizer(br.readLine());
-        int A = Integer.parseInt(st.nextToken());
         
         List<Integer> decimal = new ArrayList<>();
         
