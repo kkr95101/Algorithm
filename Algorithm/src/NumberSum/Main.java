@@ -31,7 +31,6 @@ public class Main {
             unseen.add(st.nextToken());
         }
         tempUnheard = unheard;
-        // 듣도 보도 못한 사람의 명단을 구함 (교집합)
         unheard.retainAll(unseen);
         
         int a = tempUnheard.size()-unheard.size();
