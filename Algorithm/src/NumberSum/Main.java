@@ -2,6 +2,7 @@ package NumberSum;
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
 import java.util.HashSet;
+import java.util.Iterator;
 import java.util.Set;
 import java.util.StringTokenizer;
 import java.io.IOException;
@@ -20,7 +21,6 @@ public class Main {
         Set<String> unheard = new HashSet<>();
         Set<String> tempUnheard = new HashSet<>();
         Set<String> unseen = new HashSet<>();
-        Set<String> tempUnseen = new HashSet<>();
         
         st = new StringTokenizer(br.readLine());
         for (int i = 0; i < N; i++) {
@@ -30,7 +30,10 @@ public class Main {
         for (int i = 0; i < M; i++) {
             unseen.add(st.nextToken());
         }
-        tempUnheard = unheard;
+        Iterator<String> iter = unheard.iterator();
+        while(iter.hasNext()) {
+        	tempUnheard.add(iter.next());
+        }
         unheard.retainAll(unseen);
         
         int a = tempUnheard.size()-unheard.size();
